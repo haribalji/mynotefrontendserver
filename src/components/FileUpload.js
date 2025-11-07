@@ -139,7 +139,7 @@ useEffect(() => {
                 <div>
                   <div className="summarizer-title">SmartSummarizer</div>
                   <div className="summarizer-sub">
-                    Upload a document to get a concise summary.
+                    Upload a Text-File to get a concise summary.
                   </div>
                 </div>
                 <div className="file-row">
