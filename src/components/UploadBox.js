@@ -50,7 +50,7 @@ export default function UploadBox() {
     stopCamera();
 
     try {
-      const res = await axios.post("http://127.0.0.1:5001/capture-text", formData, {
+      const res = await axios.post("https://mynotepythonserver.onrender.com/capture-text", formData, {
         headers: { "Content-Type": "multipart/form-data" },
         timeout: 180000,
       });
@@ -92,7 +92,7 @@ export default function UploadBox() {
     formData.append("image", file);
 
     try {
-      const res = await axios.post("http://127.0.0.1:5001/capture-text", formData, {
+      const res = await axios.post("https://mynotepythonserver.onrender.com/capture-text", formData, {
         headers: { "Content-Type": "multipart/form-data" },
         timeout: 180000,
       });
