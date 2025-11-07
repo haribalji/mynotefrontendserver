@@ -133,10 +133,9 @@ const Navbar = () => {
               Admin
             </Link>
           )}
-        </nav>
 
-        <div className="nav-actions">
-          {token ? (
+
+{token ? (
             <button
               onClick={() => {
                 handleLogout();
@@ -164,7 +163,41 @@ const Navbar = () => {
               </Link>
             </>
           )}
-        </div>
+
+
+            
+        </nav>
+
+        // <div className="nav-actions">
+        //   {token ? (
+        //     <button
+        //       onClick={() => {
+        //         handleLogout();
+        //         handleNavCollapse();
+        //       }}
+        //       className="btn-logout"
+        //     >
+        //       Logout
+        //     </button>
+        //   ) : (
+        //     <>
+        //       <Link
+        //         className="btn-outline"
+        //         to="/login"
+        //         onClick={handleNavCollapse}
+        //       >
+        //         Login
+        //       </Link>
+        //       <Link
+        //         className="btn-logout"
+        //         to="/signup"
+        //         onClick={handleNavCollapse}
+        //       >
+        //         Signup
+        //       </Link>
+        //     </>
+        //   )}
+        // </div>
       </div>
     </header>
   );
