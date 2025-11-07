@@ -209,7 +209,7 @@ useEffect(() => {
     formData.append("file", file);
 
     try {
-      await axios.post("http://127.0.0.1:8000/upload_pdf/", formData, {
+      await axios.post("https://mynotepythonserver.onrender.com/upload_pdf/", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       alert("✅ PDF uploaded successfully!");
@@ -229,7 +229,7 @@ useEffect(() => {
     // hide Q/A sections while processing
     setShowQA(false);
     try {
-      const res = await axios.post("http://127.0.0.1:8000/ask_question/", {
+      const res = await axios.post("https://mynotepythonserver.onrender.com/ask_question/", {
         query: question,
       });
       setChatHistory((prev) => [
@@ -260,7 +260,7 @@ useEffect(() => {
   // Add new file (reset)
   const handleAddNewFile = async () => {
     try {
-      await axios.post("http://127.0.0.1:8000/reset_db/");
+      await axios.post("https://mynotepythonserver.onrender.com/reset_db/");
     } catch (err) {
       console.error("Failed to reset DB:", err);
     }
@@ -278,7 +278,7 @@ useEffect(() => {
     setLoading(true);
     setShowQA(false);
     try {
-      const res = await axios.post("http://127.0.0.1:8000/generate_questions/");
+      const res = await axios.post("https://mynotepythonserver.onrender.com/generate_questions/");
       let data = res.data.mcqs;
 
       // Try parsing JSON if it's a string
