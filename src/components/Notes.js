@@ -7,7 +7,7 @@ import "../styles/Notes.css";
 
 // import bootstrap from "bootstrap"
 // window.bootstrap = require('bootstrap/dist/js/bootstrap.bundle.js');
-import { Modal } from "bootstrap";
+// import { Modal } from "bootstrap";
 import { useNavigate } from "react-router-dom";
 
 const Notes = (props) => {
