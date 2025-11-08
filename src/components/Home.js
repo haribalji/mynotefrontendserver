@@ -3,6 +3,8 @@ import noteContext from "../context/notes/notecontext";
 import Notes from "./Notes";
 import Addnote from "./Addnote";
 const Home = (props) => {
+    /* eslint-disable no-unused-vars, no-useless-escape */
+
   const a = useContext(noteContext);
   const { notes, setNotes } = a; //doing the deconstuction
   // useEffect(() => {//instead of componentdidmount
