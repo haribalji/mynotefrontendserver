@@ -5,6 +5,8 @@ import { useNavigate } from "react-router-dom";
 import GeminiResponse from "./GeminiResponse";
 
 const FileUpload = () => {
+    /* eslint-disable no-unused-vars, no-useless-escape */
+
   const summaryRef = useRef(null);
   const token = localStorage.getItem("token");
   const navigate = useNavigate();
