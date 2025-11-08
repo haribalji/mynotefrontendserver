@@ -4,12 +4,15 @@ import noteContext from "../context/notes/notecontext";
 import Noteitem from "./Noteitem";
 import Addnote from "./Addnote";
 import "../styles/Notes.css";
+
 // import bootstrap from "bootstrap"
 // window.bootstrap = require('bootstrap/dist/js/bootstrap.bundle.js');
 import { Modal } from "bootstrap";
 import { useNavigate } from "react-router-dom";
 
 const Notes = (props) => {
+    /* eslint-disable no-unused-vars, no-useless-escape */
+
   const { showAlert } = props;
   const a = useContext(noteContext);
   const { notes, getNotes, editnote } = a; //doing the deconstuction
