@@ -27,6 +27,8 @@ import { jwtDecode } from "jwt-decode"; // Use named import
 
 // here only we are maintaining the upload delete files and notes
 const StudentNoteComponent = () => {
+    /* eslint-disable no-unused-vars, no-useless-escape */
+
   // URL parameters and navigation
   const { classNumber, subject, chapter } = useParams();
   const navigate = useNavigate();
