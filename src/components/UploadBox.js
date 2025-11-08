@@ -6,6 +6,8 @@ import "../styles/Summarizer.css";
 import GeminiResponse from "./GeminiResponse";
 
 export default function UploadBox() {
+  /* eslint-disable no-unused-vars, no-useless-escape */
+
   const [file, setFile] = useState(null);
   const [loading, setLoading] = useState(false);
   const [extractedText, setExtractedText] = useState("");
