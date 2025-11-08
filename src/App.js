@@ -24,7 +24,7 @@ import StudentNote from "./components/StudentNote";
 import Footer from "./components/Footer";
 import FileUpload from "./components/FileUpload";
 import Admin from "./components/Admin";
-import QuizApp from "./components/Quizapp";
+// import QuizApp from "./components/Quizapp";
 import UploadBox from "./components/UploadBox";
 import PdfChatApp from "./components/PdfChatApp";
 
