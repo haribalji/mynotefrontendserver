@@ -174,7 +174,7 @@ function AppRoutes({ showAlert }) {
               path="/notes/:classNumber/:subject/:chapter"
               element={<StudentNote />}
             />
-            // <Route exact path="/quizzes" element={<QuizApp />} />
+          
             <Route path="/upload" element={<UploadBox/>} />
             <Route path="/pdfchat" element={<PdfChatApp/>} />
           </Routes>
