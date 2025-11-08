@@ -3,6 +3,8 @@ import noteContext from "../context/notes/notecontext";
 import "../styles/Addnote.css";
 
 const Addnote = (props) => {
+  /* eslint-disable no-unused-vars, no-useless-escape */
+
   const a = useContext(noteContext);
   const { addNote } = a; //doing the deconstuction
   const [note, setnote] = useState({ Title: "", description: "", tag: "" });
