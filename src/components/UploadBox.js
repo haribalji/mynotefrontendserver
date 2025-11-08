@@ -136,7 +136,7 @@ export default function UploadBox() {
   if (lang === "ta") {
     textToSpeak = textToSpeak.replace(/[A-Za-z0-9.,!?;:"'(){}[\]]+/g, "");
   } else {
-    textToSpeak = textToSpeak.replace(/[\*\-,—]/g, "");
+textToSpeak = textToSpeak.replace(/[*\-,—]/g, "");
   }
 
   const utterance = new SpeechSynthesisUtterance(textToSpeak.trim());
