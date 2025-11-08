@@ -92,25 +92,7 @@ const Navbar = () => {
             SmartSummarizer
           </Link>
 
-          // <Link
-          //   className={`nav-link ${
-          //     location.pathname === "/upload" ? "active" : ""
-          //   }`}
-          //   to="/upload"
-          //   onClick={handleNavCollapse}
-          // >
-          //   Image learning
-          // </Link>
-
-          // <Link
-          //   className={`nav-link ${
-          //     location.pathname === "/pdfchat" ? "active" : ""
-          //   }`}
-          //   to="/pdfchat"
-          //   onClick={handleNavCollapse}
-          // >
-          //   Chat with PDF
-          // </Link>
+         
 
           <Link
             className={`nav-link ${
