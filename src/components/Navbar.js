@@ -89,11 +89,8 @@ const Navbar = () => {
             to="/FileUpload"
             onClick={handleNavCollapse}
           >
-            SmartSummarizer
+              SmartSummarizer
           </Link>
-
-         
-
           <Link
             className={`nav-link ${
               location.pathname === "/about" ? "active" : ""
@@ -103,7 +100,6 @@ const Navbar = () => {
           >
             About
           </Link>
-
           {isAdmin && (
             <Link
               className={`nav-link ${
@@ -115,8 +111,6 @@ const Navbar = () => {
               Admin
             </Link>
           )}
-
-
 {token ? (
             <button
               onClick={() => {
