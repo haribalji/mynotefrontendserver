@@ -139,9 +139,6 @@ const Navbar = () => {
               </Link>
             </>
           )}
-
-
-            
         </nav>
 
     
