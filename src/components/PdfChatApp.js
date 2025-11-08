@@ -29,7 +29,7 @@ useEffect(() => {
     const formData = new FormData();
     formData.append("file", file);
     try {
-      await axios.post(`${BACKEND_URL}/uploadpdf/`, formData, {
+      await axios.post(`${BACKEND_URL}/upload_pdf/`, formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       alert("✅ PDF uploaded successfully!");
@@ -49,7 +49,7 @@ useEffect(() => {
     // hide Q/A sections while processing
     setShowQA(false);
     try {
-      const res = await axios.post(`${BACKEND_URL}/askquestion/`, {
+      const res = await axios.post(`${BACKEND_URL}/ask_question/`, {
         query: question,
       });
       setChatHistory((prev) => [
