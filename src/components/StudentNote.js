@@ -17,10 +17,10 @@ import {
   FaTrash,
   FaCamera,
   FaMicrophone,
-  FaSyncAlt,
+  
 } from "react-icons/fa";
 import ChecklistModal from "./Checkmodel";
-import axios from "axios";
+// import axios from "axios";
 import "../styles/StudentNote.css";
 // import jwtDecode from "jwt-decode"; // Install with: npm install jwt-decode
 import { jwtDecode } from "jwt-decode"; // Use named import
