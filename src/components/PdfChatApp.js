@@ -5,6 +5,8 @@ import axios from "axios";
 import "../styles/PdfChatApp.css";
 
 function PdfChatApp() {
+    /* eslint-disable no-unused-vars, no-useless-escape */
+
   const BACKEND_URL = "https://mynotepythonserver.onrender.com";
 
   const [file, setFile] = useState();
