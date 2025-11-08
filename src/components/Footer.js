@@ -59,6 +59,8 @@ import React, { useState, useEffect } from "react";
 import "../styles/Layout.css";
 
 const Footer = () => {
+    /* eslint-disable no-unused-vars, no-useless-escape */
+
   const [showScroll, setShowScroll] = useState(false);
 
   const checkScrollTop = () => setShowScroll(window.pageYOffset > 400);
