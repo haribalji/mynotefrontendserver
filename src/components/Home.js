@@ -1,7 +1,7 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import noteContext from "../context/notes/notecontext";
 import Notes from "./Notes";
-import Addnote from "./Addnote";
+// import Addnote from "./Addnote";
 const Home = (props) => {
     /* eslint-disable no-unused-vars, no-useless-escape */
 
