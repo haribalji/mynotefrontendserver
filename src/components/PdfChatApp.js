@@ -5,6 +5,8 @@ import axios from "axios";
 import "../styles/PdfChatApp.css";
 
 function PdfChatApp() {
+  const BACKEND_URL = "https://mynotepythonserver.onrender.com";
+
   const [file, setFile] = useState();
   const [uploading, setUploading] = useState(false);
   const [uploaded, setUploaded] = useState(false);
@@ -26,7 +28,6 @@ useEffect(() => {
     setUploading(true);
     const formData = new FormData();
     formData.append("file", file);
-const BACKEND_URL = "https://mynotepythonserver.onrender.com";
     try {
       await axios.post(`${BACKEND_URL}/upload_pdf/`, formData, {
         headers: { "Content-Type": "multipart/form-data" },
